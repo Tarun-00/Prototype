@@ -1,7 +1,12 @@
-# langchain-pdf-chatbot
+# Starting Prototype of Hackathon Project
 
+---
 
-Ues Langchain to talk with PDF documents
+# Credit
+
+The prototype was based on this [project](https://github.com/wsy258-strar/langchain-pdf-chatbot). It is then customized for learning purposes.
+
+The user thanks the author for the great work.
 
 ## How it works
 
