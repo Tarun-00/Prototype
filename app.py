@@ -35,16 +35,6 @@ def get_text_chunks(text):
     chunks = text_splitter.split_text(text)
     return chunks
 
-# Save 
-def save_vector_store(textChunks):
-    db = FAISS.from_texts(textChunks, OpenAIEmbeddings())
-    db.save_local('faiss')
- 
- 
-# Load
-def load_vector_store():
-    return FAISS.load_local('faiss', OpenAIEmbeddings())
-
 def st_first():
     st.set_page_config(page_title="Ask your PDF")
     st.header("Ask your PDF 💬")

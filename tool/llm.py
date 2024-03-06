@@ -10,7 +10,7 @@ class LlmEngine:
 
     def __init__(
             self,
-            model_name: str = "gpt-3.5-turbo-0125",
+            model_name: str = "gpt-4",
             streaming: bool = False
     ):
         self.model_name = model_name
