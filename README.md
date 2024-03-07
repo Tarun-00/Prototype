@@ -1,5 +1,6 @@
 # CCTB Hackathon Prototype, April 2024
 ---
+![CCTB](https://www.canadianctb.ca/media/2559/cctb_logo_2_white.svg?anchor=center&mode=crop&quality=75&width=244&height=83&rnd=133531514380000000)
 
 ## Table of content
 
@@ -35,7 +36,7 @@ For example, ChatGPT is one of the most popular LLMs. It is based on the GPT-3 m
 Meanwhile, building an LLM application is becoming more and more accessible. The goal of this hackathon is to build a prototype of an LLM application that can be used to solve a real-world problem. The modern tools like Langchain, Huggingface, and OpenAI are very helpful to build such an application.On another hand, libraries like Streamlit can be used to create a user-friendly interface for the application, which significantly reduces the idea-to-prototype time.
 
 
-## Before You Start Coding.
+## Before You Start Coding
 
 ### Obtain an OpenAI API Key from the Hackathon Organizers
 
@@ -221,7 +222,7 @@ For ConversationalRetrievalChain,
 
 Q3: Can I tune the FAISS parameters?
 
-Yes. You can try other vector stores too.
+> Yes. You can try other vector stores too.
 
 
 ## Potential Ideas and directions
