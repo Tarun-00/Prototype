@@ -27,7 +27,6 @@ def get_pdf_text(pdf):
 def get_text_chunks(text):
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=1000,
-        # chunk_size=768,
         chunk_overlap=200,
         separators=["\n\n", "\n", " ", ""],
         length_function=len
@@ -38,8 +37,6 @@ def get_text_chunks(text):
 def st_first():
     st.set_page_config(page_title="Ask your PDF")
     st.header("Ask your PDF 💬")
-
-
 
 def main():
   st_first()
@@ -54,14 +51,12 @@ def main():
 
     user_question = st.text_input("Ask a question about your PDF:")
     if user_question:
-
         docs = knowledge_base.similarity_search(user_question)
         llm = LlmEngine()
         chain = llm.get_qa_chain(knowledge_base)
         with get_openai_callback() as cb:
            response = chain({"query": user_question})
-           print(cb)
-            
+           print(cb)  
         st.write(response['result'])
 
     

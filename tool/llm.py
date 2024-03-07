@@ -21,26 +21,11 @@ class LlmEngine:
             callbacks=[StreamingStdOutCallbackHandler()],
             openai_api_key=os.getenv("OPENAI_API_KEY"))
 
-    # split texts
-    def get_text_chunks(
-            self,
-            text,
-            chunk_size: int = 1000,
-            chunk_overlap: int = 200
-    ):
-        text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=chunk_size,
-            # chunk_size=768,
-            chunk_overlap=chunk_overlap,
-            length_function=len
-        )
-        return text_splitter.split_text(text)
-
     def get_qa_chain(
             self,
             vector_store
     ):
-        prompt_template = """Based pm the following known content, answer the user's question concisely and professionally.
+        prompt_template = """Based on the following known content, answer the user's question concisely and professionally.
                                                 {context}
                                                 Question:
                                                 {question}"""
@@ -55,7 +40,7 @@ class LlmEngine:
             self,
             vector_store
     ):
-        prompt_template = """Based pm the following known content, answer the user's question concisely and professionally.
+        prompt_template = """Based on the following known content, answer the user's question concisely and professionally.
                                                 Known content:
                                                 {context}
                                                 Question:
