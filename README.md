@@ -17,10 +17,10 @@
   - [llm.py file](#llmpy-file)
 - [Ideal Team Structure](#ideal-team-structure)
 - [FAQ](#faq)
-- [Potential Ideas and directions](#potential-ideas-and-directions)
-  - [Choose A Domain of Application](#choose-a-domain-of-application)
+- [Potential Ideas and Directions](#potential-ideas-and-directions)
+  - [Choose a Domain of Application](#choose-a-domain-of-application)
   - [Technical Improvements](#technical-improvements)
-- [Credit](#credit)
+- [Credits](#credit)
 
 ## Theme of The Hackathon
 
