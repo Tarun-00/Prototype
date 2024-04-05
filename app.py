@@ -17,6 +17,7 @@ def get_openai_key():
     return os.environ['OPENAI_API_KEY']
 
 
+
 def get_pdf_text(pdf):
   pdf_reader = PdfReader(pdf)
   text = ""
